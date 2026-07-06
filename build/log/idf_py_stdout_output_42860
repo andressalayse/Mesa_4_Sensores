@@ -1,0 +1,577 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x6c (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c110,len:0xe2c
+load:0x4086e610,len:0x2e5c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Jun 26 2026 13:01:16[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=420b8020 size=29fbch (171964) map[0m
+[0;32mI (128) esp_image: segment 1: paddr=00039fe4 vaddr=40800000 size=06034h ( 24628) load[0m
+[0;32mI (135) esp_image: segment 2: paddr=00040020 vaddr=42000020 size=b2210h (729616) map[0m
+[0;32mI (286) esp_image: segment 3: paddr=000f2238 vaddr=40806034 size=14044h ( 81988) load[0m
+[0;32mI (306) esp_image: segment 4: paddr=00106284 vaddr=4081a080 size=03b90h ( 15248) load[0m
+[0;32mI (316) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (317) boot: Disabling RNG early entropy source...[0m
+[0;32mI (328) cpu_start: Unicore app[0m
+[0;32mI (337) cpu_start: Pro cpu start user code[0m
+[0;32mI (337) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (337) app_init: Application information:[0m
+[0;32mI (340) app_init: Project name:     app-template[0m
+[0;32mI (345) app_init: App version:      1[0m
+[0;32mI (350) app_init: Compile time:     Jun 26 2026 12:59:37[0m
+[0;32mI (356) app_init: ELF file SHA256:  6defa2177...[0m
+[0;32mI (361) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (366) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (371) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (376) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (381) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (388) heap_init: At 408235E0 len 00059030 (356 KiB): RAM[0m
+[0;32mI (394) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (400) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (407) spi_flash: detected chip: generic[0m
+[0;32mI (411) spi_flash: flash io: dio[0m
+[0;33mW (415) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (428) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (439) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (446) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (453) coexist: coex firmware version: 4482466[0m
+[0;32mI (458) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (463) main_task: Started on CPU0[0m
+[0;32mI (463) main_task: Calling app_main()[0m
+[0;32mI (473) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (483) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (493) wifi:wifi driver task: 4082d850, prio:23, stack:6656, core=0[0m
+[0;32mI (493) wifi:wifi firmware version: ccaebfa[0m
+[0;32mI (493) wifi:wifi certification version: v7.0[0m
+[0;32mI (493) wifi:config NVS flash: enabled[0m
+[0;32mI (493) wifi:config nano formating: disabled[0m
+[0;32mI (503) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (503) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (513) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (513) wifi:Init management short buffer num: 32[0m
+[0;32mI (523) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (523) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (523) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (533) wifi:Init static rx buffer num: 10[0m
+[0;32mI (533) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (543) wifi_init: rx ba win: 6[0m
+[0;32mI (543) wifi_init: accept mbox: 6[0m
+[0;32mI (553) wifi_init: tcpip mbox: 32[0m
+[0;32mI (553) wifi_init: udp mbox: 6[0m
+[0;32mI (553) wifi_init: tcp mbox: 6[0m
+[0;32mI (563) wifi_init: tcp tx win: 5760[0m
+[0;32mI (563) wifi_init: tcp rx win: 5760[0m
+[0;32mI (563) wifi_init: tcp mss: 1440[0m
+[0;32mI (573) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (573) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (583) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (593) phy_init: phy_version 310,dde1ba9,Jun  4 2024,16:38:11[0m
+[0;33mW (663) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (663) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (663) wifi:(agc)0x600a7128:0xd21d8800, min.avgNF:0xce->0xd2(dB), RCalCount:0x1d8, min.RRssi:0x800(-128.00)[0m
+[0;33mW (673) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (683) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (683) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (683) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (693) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (693) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (693) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (703) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (703) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (703) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (713) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (713) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (713) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (723) wifi:(he)attach, station, phymode:11ax[0m
+[0;32mI (723) wifi:mode : sta (f0:f5:bd:01:5d:98)[0m
+[0;32mI (733) wifi:enable tsf[0m
+[0;31mE (733) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (743) transport_base: Failed to open a new connection: 32772[0m
+[0;32mI (1043) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1043) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (1043) wifi:state: init -> auth (0xb0)[0m
+[0;31mE (1033) mqtt_client: Error transport connect[0m
+[0;33mW (1053) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1063) mqtt_client: Client force reconnect requested[0m
+[0;32mI (1053) wifi:state: auth -> assoc (0x0)[0m
+[0;31mE (1073) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1083) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1083) mqtt_client: Error transport connect[0m
+[0;33mW (1093) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1103) mqtt_client: Client force reconnect requested[0m
+[0;32mI (1083) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1113) wifi:(trc)phytype:CBW20-LGI, snr:46, maxRate:130, highestRateIdx:1[0m
+[0;33mW (1113) wifi:(trc)band:2G, phymode:3, highestRateIdx:1, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (1123) wifi:(trc)band:2G, rate(L-MCS7, rateIdx:1), ampdu(rate:L-MCS7, schedIdx(1, stop:8)), snr:46, ampduState:wait operational[0m
+[0;32mI (1133) wifi:ifidx:0, rssi:-51, nf:-97, phytype(0x2, CBW20-LGI), phymode(0x3, 11bgn), max_rate:130, he:0, vht:0, ht:1[0m
+[0;32mI (1143) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:0(no restriction)[0m
+[0;31mE (1153) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1163) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1163) mqtt_client: Error transport connect[0m
+[0;33mW (1173) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1183) mqtt_client: Client force reconnect requested[0m
+[0;32mI (1163) wifi:connected with PROJETO, aid = 2, channel 1, BW20, bssid = 64:66:b3:41:6e:3e[0m
+[0;32mI (1193) wifi:cipher(pairwise:0x3, group:0x3), pmf:0, security:WPA2-PSK, phy:11bgn, rssi:-51[0m
+[0;31mE (1203) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (1213) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (1213) wifi:pm start, type:1, aid:0x2, trans-BSSID:64:66:b3:41:6e:3e, BSSID[5]:0x3e, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (1223) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (1233) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (1243) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (1253) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;31mE (1263) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1273) mqtt_client: Error transport connect[0m
+[0;33mW (1273) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1283) mqtt_client: Client force reconnect requested[0m
+[0;32mI (1273) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (1303) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;32mI (1313) wifi:AP's beacon interval = 204800 us, DTIM period = 3[0m
+[0;32mI (1313) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:64, batimeout:0, txa_wnd:64[0m
+[0;31mE (1323) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;33mW (1333) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x1003e6e, TALO:0x41b36664, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;31mE (1343) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1353) mqtt_client: Error transport connect[0m
+[0;33mW (1353) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1363) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1373) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1373) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1383) mqtt_client: Error transport connect[0m
+[0;33mW (1383) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1393) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1403) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1403) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1413) mqtt_client: Error transport connect[0m
+[0;33mW (1423) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1423) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1433) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1443) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1443) mqtt_client: Error transport connect[0m
+[0;33mW (1453) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1463) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1463) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1473) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1483) mqtt_client: Error transport connect[0m
+[0;33mW (1483) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1493) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1503) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1503) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1513) mqtt_client: Error transport connect[0m
+[0;33mW (1513) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1523) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1533) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1533) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1543) mqtt_client: Error transport connect[0m
+[0;33mW (1553) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1553) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1563) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1573) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1573) mqtt_client: Error transport connect[0m
+[0;33mW (1583) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1593) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1593) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1603) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1613) mqtt_client: Error transport connect[0m
+[0;33mW (1613) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1623) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1633) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1633) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1643) mqtt_client: Error transport connect[0m
+[0;33mW (1643) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1653) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1663) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1663) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1673) mqtt_client: Error transport connect[0m
+[0;33mW (1683) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1683) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1693) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1703) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1703) mqtt_client: Error transport connect[0m
+[0;33mW (1713) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1723) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1723) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1733) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1743) mqtt_client: Error transport connect[0m
+[0;33mW (1743) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1753) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1763) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1763) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1773) mqtt_client: Error transport connect[0m
+[0;33mW (1773) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1783) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1793) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1793) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1803) mqtt_client: Error transport connect[0m
+[0;33mW (1813) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1813) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1823) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1833) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1833) mqtt_client: Error transport connect[0m
+[0;33mW (1843) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1853) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1853) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1863) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1873) mqtt_client: Error transport connect[0m
+[0;33mW (1873) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1883) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1893) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1893) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1903) mqtt_client: Error transport connect[0m
+[0;33mW (1903) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1913) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1923) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1923) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1933) mqtt_client: Error transport connect[0m
+[0;33mW (1943) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1943) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1953) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1963) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (1963) mqtt_client: Error transport connect[0m
+[0;33mW (1973) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (1983) mqtt_client: Client force reconnect requested[0m
+[0;31mE (1983) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (1993) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2003) mqtt_client: Error transport connect[0m
+[0;33mW (2003) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2013) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2023) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2023) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2033) mqtt_client: Error transport connect[0m
+[0;33mW (2033) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2043) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2053) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2053) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2063) mqtt_client: Error transport connect[0m
+[0;33mW (2073) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2073) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2083) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2093) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2093) mqtt_client: Error transport connect[0m
+[0;33mW (2103) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2113) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2113) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2123) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2133) mqtt_client: Error transport connect[0m
+[0;33mW (2133) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2143) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2153) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2153) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2163) mqtt_client: Error transport connect[0m
+[0;33mW (2163) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2173) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2183) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2183) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2193) mqtt_client: Error transport connect[0m
+[0;33mW (2203) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2203) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2213) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2223) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2223) mqtt_client: Error transport connect[0m
+[0;33mW (2233) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2243) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2243) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2253) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2263) mqtt_client: Error transport connect[0m
+[0;33mW (2263) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2273) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2283) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (2283) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2293) mqtt_client: Error transport connect[0m
+[0;33mW (2293) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2303) mqtt_client: Client force reconnect requested[0m
+[0;31mE (2313) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;32mI (2323) esp_netif_handlers: sta ip: 192.168.0.102, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2323) SENSORES_MESA4: ✅ Conectado à rede Wi-Fi[0m
+[0;31mE (2333) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2343) mqtt_client: Error transport connect[0m
+[0;33mW (2343) SENSORES_MESA4: ⚠️  Desconectado do broker MQTT, tentando reconectar...[0m
+[0;32mI (2353) mqtt_client: Client force reconnect requested[0m
+[0;32mI (2363) SENSORES_MESA4: Iniciando cliente MQTT...[0m
+[0;32mI (2363) SENSORES_MESA4: LD2420 [Mesa4] UART1 iniciado: TX=GPIO5 RX=GPIO4 @ 115200 baud[0m
+[0;32mI (2583) SENSORES_MESA4: ✅ Conectado ao broker MQTT[0m
+[0;32mI (2873) SENSORES_MESA4: LD2420 [Mesa4] UART1 — configuração de gates SKIPADA (modo debug)[0m
+[0;32mI (2883) SENSORES_MESA4: Inicialização concluída — Mesa 4.[0m
+[0;32mI (3003) SENSORES_MESA4: LD2420 UART1 — 90 bytes: "ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  "[0m
+[0;32mI (3003) SENSORES_MESA4: Mesa4 → Lux: 555.05 lx | Dist: 129 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (3013) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (4163) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  "[0m
+[0;32mI (4163) SENSORES_MESA4: Mesa4 → Lux: 551.51 lx | Dist: 129 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (4173) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (5433) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  "[0m
+[0;32mI (5443) SENSORES_MESA4: Mesa4 → Lux: 537.32 lx | Dist: 128 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (5443) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (5583) SENSORES_MESA4: MQTT pronto para publicação após reconexão.[0m
+[0;32mI (6593) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  "[0m
+[0;32mI (6603) SENSORES_MESA4: MQTT → [mesa4/lux] = 301.47[0m
+[0;32mI (6603) SENSORES_MESA4: MQTT → [mesa4/distancia] = 128.00[0m
+[0;32mI (6613) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (6613) SENSORES_MESA4: Mesa4 → Lux: 301.47 lx | Dist: 128 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (6623) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (7863) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 128  ON  Range 131  ON  Range 130  ON  Range 126  ON  Range 131  ON  Range 131  "[0m
+[0;32mI (7873) SENSORES_MESA4: MQTT → [mesa4/lux] = 301.47[0m
+[0;32mI (7873) SENSORES_MESA4: MQTT → [mesa4/distancia] = 131.00[0m
+[0;32mI (7883) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (7893) SENSORES_MESA4: Mesa4 → Lux: 301.47 lx | Dist: 131 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (7893) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (9023) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 131  ON  Range 127  ON  Range 126  ON  Range 134  ON  Range 134  ON  Range 135  ON  Range 135  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  "[0m
+[0;32mI (9033) SENSORES_MESA4: MQTT → [mesa4/lux] = 303.24[0m
+[0;32mI (9033) SENSORES_MESA4: MQTT → [mesa4/distancia] = 136.00[0m
+[0;32mI (9043) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (9043) SENSORES_MESA4: Mesa4 → Lux: 303.24 lx | Dist: 136 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (9053) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (10183) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 149  ON  Range 149  ON  Range 158  "[0m
+[0;32mI (10193) SENSORES_MESA4: MQTT → [mesa4/lux] = 303.24[0m
+[0;32mI (10193) SENSORES_MESA4: MQTT → [mesa4/distancia] = 158.00[0m
+[0;32mI (10203) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (10203) SENSORES_MESA4: Mesa4 → Lux: 303.24 lx | Dist: 158 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (10213) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (11453) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 158  ON  Range 150  ON  Range 150  ON  Range 145  ON  Range 145  ON  Range 161  ON  Range 161  ON  Range 161  ON  Range 161  ON  Range 161  ON  Range 162  ON  Range 162  "[0m
+[0;32mI (11463) SENSORES_MESA4: MQTT → [mesa4/lux] = 305.01[0m
+[0;32mI (11463) SENSORES_MESA4: MQTT → [mesa4/distancia] = 162.00[0m
+[0;32mI (11473) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (11473) SENSORES_MESA4: Mesa4 → Lux: 305.01 lx | Dist: 162 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (11483) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (12613) SENSORES_MESA4: LD2420 UART1 — 160 bytes: "ON  Range 166  ON  Range 158  ON  Range 143  ON  Range 123  ON  Range 116  ON  Range 120  ON  Range 98  ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  "[0m
+[0;32mI (12623) SENSORES_MESA4: MQTT → [mesa4/lux] = 299.69[0m
+[0;32mI (12623) SENSORES_MESA4: MQTT → [mesa4/distancia] = 96.00[0m
+[0;32mI (12633) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (12633) SENSORES_MESA4: Mesa4 → Lux: 299.69 lx | Dist: 96 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (12643) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (13883) SENSORES_MESA4: LD2420 UART1 — 168 bytes: "ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  "[0m
+[0;32mI (13893) SENSORES_MESA4: MQTT → [mesa4/lux] = 299.69[0m
+[0;32mI (13893) SENSORES_MESA4: MQTT → [mesa4/distancia] = 96.00[0m
+[0;32mI (13903) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (13903) SENSORES_MESA4: Mesa4 → Lux: 299.69 lx | Dist: 96 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (13913) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (15043) SENSORES_MESA4: LD2420 UART1 — 157 bytes: "ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 96  ON  Range 104  ON  Range 104  ON  Range 104  "[0m
+[0;32mI (15053) SENSORES_MESA4: MQTT → [mesa4/lux] = 299.69[0m
+[0;32mI (15053) SENSORES_MESA4: MQTT → [mesa4/distancia] = 104.00[0m
+[0;32mI (15063) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 0[0m
+[0;32mI (15063) SENSORES_MESA4: Mesa4 → Lux: 299.69 lx | Dist: 104 cm | Energia: 0 | Ocupada: 0[0m
+[0;32mI (15073) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (16203) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 104  ON  Range 104  ON  Range 104  ON  Range 104  ON  Range 104  ON  Range 104  ON  Range 104  ON  Range 104  ON  Range 104  ON  Range 104  ON  Range 104  "[0m
+[0;32mI (16213) SENSORES_MESA4: MQTT → [mesa4/lux] = 301.47[0m
+[0;32mI (16213) SENSORES_MESA4: MQTT → [mesa4/distancia] = 104.00[0m
+[0;32mI (16223) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 0[0m
+[0;32mI (16223) SENSORES_MESA4: Mesa4 → Lux: 301.47 lx | Dist: 104 cm | Energia: 0 | Ocupada: 0[0m
+[0;32mI (16233) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (17473) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 104  ON  Range 104  ON  Range 104  ON  Range 122  ON  Range 136  ON  Range 152  ON  Range 152  ON  Range 152  ON  Range 152  ON  Range 152  ON  Range 152  ON  Range 152  "[0m
+[0;32mI (17483) SENSORES_MESA4: MQTT → [mesa4/lux] = 299.69[0m
+[0;32mI (17483) SENSORES_MESA4: MQTT → [mesa4/distancia] = 152.00[0m
+[0;32mI (17493) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 0[0m
+[0;32mI (17493) SENSORES_MESA4: Mesa4 → Lux: 299.69 lx | Dist: 152 cm | Energia: 0 | Ocupada: 0[0m
+[0;32mI (17503) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (18633) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 167  ON  Range 167  ON  Range 167  ON  Range 167  ON  Range 163  ON  Range 163  ON  Range 163  ON  Range 163  ON  Range 163  ON  Range 163  ON  Range 186  "[0m
+[0;32mI (18643) SENSORES_MESA4: MQTT → [mesa4/lux] = 301.47[0m
+[0;32mI (18643) SENSORES_MESA4: MQTT → [mesa4/distancia] = 186.00[0m
+[0;32mI (18653) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 0[0m
+[0;32mI (18653) SENSORES_MESA4: Mesa4 → Lux: 301.47 lx | Dist: 186 cm | Energia: 0 | Ocupada: 0[0m
+[0;32mI (18663) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (19903) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 186  ON  Range 186  ON  Range 186  ON  Range 186  ON  Range 183  ON  Range 183  ON  Range 183  ON  Range 183  ON  Range 183  ON  Range 183  ON  Range 163  ON  Range 155  "[0m
+[0;32mI (19913) SENSORES_MESA4: MQTT → [mesa4/lux] = 301.47[0m
+[0;32mI (19913) SENSORES_MESA4: MQTT → [mesa4/distancia] = 155.00[0m
+[0;32mI (19923) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 0[0m
+[0;32mI (19923) SENSORES_MESA4: Mesa4 → Lux: 301.47 lx | Dist: 155 cm | Energia: 0 | Ocupada: 0[0m
+[0;32mI (19933) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (21063) SENSORES_MESA4: LD2420 UART1 — 158 bytes: "ON  Range 139  ON  Range 130  ON  Range 120  ON  Range 117  ON  Range 88  ON  Range 88  ON  Range 88  ON  Range 88  ON  Range 88  ON  Range 85  ON  Range 85  "[0m
+[0;32mI (21073) SENSORES_MESA4: MQTT → [mesa4/lux] = 303.24[0m
+[0;32mI (21073) SENSORES_MESA4: MQTT → [mesa4/distancia] = 85.00[0m
+[0;32mI (21083) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 0[0m
+[0;32mI (21083) SENSORES_MESA4: Mesa4 → Lux: 303.24 lx | Dist: 85 cm | Energia: 0 | Ocupada: 0[0m
+[0;32mI (21093) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (22333) SENSORES_MESA4: LD2420 UART1 — 168 bytes: "ON  Range 85  ON  Range 85  ON  Range 85  ON  Range 74  ON  Range 84  ON  Range 81  ON  Range 84  ON  Range 93  ON  Range 99  ON  Range 98  ON  Range 98  ON  Range 98  "[0m
+[0;32mI (22343) SENSORES_MESA4: MQTT → [mesa4/lux] = 301.47[0m
+[0;32mI (22343) SENSORES_MESA4: MQTT → [mesa4/distancia] = 98.00[0m
+[0;32mI (22353) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 0[0m
+[0;32mI (22353) SENSORES_MESA4: Mesa4 → Lux: 301.47 lx | Dist: 98 cm | Energia: 0 | Ocupada: 0[0m
+[0;32mI (22363) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (23493) SENSORES_MESA4: LD2420 UART1 — 164 bytes: "ON  Range 98  ON  Range 101  ON  Range 101  ON  Range 114  ON  Range 114  ON  Range 113  ON  Range 123  ON  Range 121  ON  Range 120  ON  Range 123  ON  Range 123  "[0m
+[0;32mI (23503) SENSORES_MESA4: MQTT → [mesa4/lux] = 3.55[0m
+[0;32mI (23503) SENSORES_MESA4: MQTT → [mesa4/distancia] = 123.00[0m
+[0;32mI (23513) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (23513) SENSORES_MESA4: Mesa4 → Lux: 3.55 lx | Dist: 123 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (23523) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (24653) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 123  ON  Range 123  ON  Range 123  ON  Range 142  ON  Range 142  ON  Range 159  ON  Range 176  ON  Range 177  ON  Range 183  ON  Range 192  ON  Range 192  "[0m
+[0;32mI (24663) SENSORES_MESA4: MQTT → [mesa4/lux] = 3.55[0m
+[0;32mI (24663) SENSORES_MESA4: MQTT → [mesa4/distancia] = 192.00[0m
+[0;32mI (24673) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (24673) SENSORES_MESA4: Mesa4 → Lux: 3.55 lx | Dist: 192 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (24683) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (25923) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 200  ON  Range 196  ON  Range 175  ON  Range 158  ON  Range 139  ON  Range 134  ON  Range 142  ON  Range 135  ON  Range 144  ON  Range 148  ON  Range 163  ON  Range 189  "[0m
+[0;32mI (25933) SENSORES_MESA4: MQTT → [mesa4/lux] = 3.55[0m
+[0;32mI (25933) SENSORES_MESA4: MQTT → [mesa4/distancia] = 189.00[0m
+[0;32mI (25943) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (25943) SENSORES_MESA4: Mesa4 → Lux: 3.55 lx | Dist: 189 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (25953) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (27083) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 216  ON  Range 229  ON  Range 225  ON  Range 225  ON  Range 234  ON  Range 217  ON  Range 218  ON  Range 216  ON  Range 199  ON  Range 185  ON  Range 177  "[0m
+[0;32mI (27093) SENSORES_MESA4: MQTT → [mesa4/lux] = 3.55[0m
+[0;32mI (27093) SENSORES_MESA4: MQTT → [mesa4/distancia] = 177.00[0m
+[0;32mI (27103) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (27103) SENSORES_MESA4: Mesa4 → Lux: 3.55 lx | Dist: 177 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (27113) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (28353) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 164  ON  Range 150  ON  Range 150  ON  Range 150  ON  Range 148  ON  Range 148  ON  Range 165  ON  Range 164  ON  Range 159  ON  Range 157  ON  Range 157  ON  Range 173  "[0m
+[0;32mI (28363) SENSORES_MESA4: MQTT → [mesa4/lux] = 3.55[0m
+[0;32mI (28363) SENSORES_MESA4: MQTT → [mesa4/distancia] = 173.00[0m
+[0;32mI (28373) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (28373) SENSORES_MESA4: Mesa4 → Lux: 3.55 lx | Dist: 173 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (28383) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (29513) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 178  ON  Range 188  ON  Range 188  ON  Range 187  ON  Range 187  ON  Range 171  ON  Range 171  ON  Range 194  ON  Range 186  ON  Range 203  ON  Range 203  "[0m
+[0;32mI (29523) SENSORES_MESA4: MQTT → [mesa4/lux] = 5.32[0m
+[0;32mI (29523) SENSORES_MESA4: MQTT → [mesa4/distancia] = 203.00[0m
+[0;32mI (29533) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 0[0m
+[0;32mI (29533) SENSORES_MESA4: Mesa4 → Lux: 5.32 lx | Dist: 203 cm | Energia: 0 | Ocupada: 0[0m
+[0;32mI (29543) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (30673) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 203  ON  Range 203  ON  Range 212  ON  Range 204  ON  Range 206  ON  Range 210  ON  Range 186  ON  Range 173  ON  Range 151  ON  Range 154  ON  Range 154  "[0m
+[0;32mI (30683) SENSORES_MESA4: MQTT → [mesa4/lux] = 12.41[0m
+[0;32mI (30683) SENSORES_MESA4: MQTT → [mesa4/distancia] = 154.00[0m
+[0;32mI (30693) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 0[0m
+[0;32mI (30693) SENSORES_MESA4: Mesa4 → Lux: 12.41 lx | Dist: 154 cm | Energia: 0 | Ocupada: 0[0m
+[0;32mI (30703) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (31943) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 162  ON  Range 160  ON  Range 160  ON  Range 160  ON  Range 158  ON  Range 162  ON  Range 175  ON  Range 178  ON  Range 178  ON  Range 178  ON  Range 163  ON  Range 140  "[0m
+[0;32mI (31953) SENSORES_MESA4: MQTT → [mesa4/lux] = 30.15[0m
+[0;32mI (31953) SENSORES_MESA4: MQTT → [mesa4/distancia] = 140.00[0m
+[0;32mI (31963) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (31963) SENSORES_MESA4: Mesa4 → Lux: 30.15 lx | Dist: 140 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (31973) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (33103) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 135  ON  Range 138  ON  Range 138  ON  Range 124  ON  Range 135  ON  Range 135  ON  Range 146  ON  Range 153  ON  Range 168  ON  Range 176  ON  Range 190  "[0m
+[0;32mI (33113) SENSORES_MESA4: MQTT → [mesa4/lux] = 266.00[0m
+[0;32mI (33113) SENSORES_MESA4: MQTT → [mesa4/distancia] = 190.00[0m
+[0;32mI (33123) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (33123) SENSORES_MESA4: Mesa4 → Lux: 266.00 lx | Dist: 190 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (33133) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (34373) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 193  ON  Range 213  ON  Range 213  ON  Range 199  ON  Range 189  ON  Range 207  ON  Range 207  ON  Range 207  ON  Range 213  ON  Range 202  ON  Range 187  ON  Range 192  "[0m
+[0;32mI (34383) SENSORES_MESA4: MQTT → [mesa4/lux] = 608.25[0m
+[0;32mI (34383) SENSORES_MESA4: MQTT → [mesa4/distancia] = 192.00[0m
+[0;32mI (34393) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (34393) SENSORES_MESA4: Mesa4 → Lux: 608.25 lx | Dist: 192 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (34403) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (35533) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 176  ON  Range 180  ON  Range 183  ON  Range 163  ON  Range 145  ON  Range 172  ON  Range 173  ON  Range 164  ON  Range 162  ON  Range 162  ON  Range 156  "[0m
+[0;32mI (35543) SENSORES_MESA4: MQTT → [mesa4/lux] = 601.16[0m
+[0;32mI (35543) SENSORES_MESA4: MQTT → [mesa4/distancia] = 156.00[0m
+[0;32mI (35553) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (35553) SENSORES_MESA4: Mesa4 → Lux: 601.16 lx | Dist: 156 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (35563) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (36693) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 147  ON  Range 139  ON  Range 104  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  "[0m
+[0;32mI (36703) SENSORES_MESA4: MQTT → [mesa4/lux] = 594.07[0m
+[0;32mI (36703) SENSORES_MESA4: MQTT → [mesa4/distancia] = 103.00[0m
+[0;32mI (36713) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (36713) SENSORES_MESA4: Mesa4 → Lux: 594.07 lx | Dist: 103 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (36723) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (37963) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  "[0m
+[0;32mI (37973) SENSORES_MESA4: MQTT → [mesa4/lux] = 590.52[0m
+[0;32mI (37973) SENSORES_MESA4: MQTT → [mesa4/distancia] = 103.00[0m
+[0;32mI (37983) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 0[0m
+[0;32mI (37983) SENSORES_MESA4: Mesa4 → Lux: 590.52 lx | Dist: 103 cm | Energia: 0 | Ocupada: 0[0m
+[0;32mI (37993) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (39123) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 103  ON  Range 113  ON  Range 113  ON  Range 113  ON  Range 113  ON  Range 113  "[0m
+[0;32mI (39133) SENSORES_MESA4: MQTT → [mesa4/lux] = 588.75[0m
+[0;32mI (39133) SENSORES_MESA4: MQTT → [mesa4/distancia] = 113.00[0m
+[0;32mI (39143) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (39143) SENSORES_MESA4: Mesa4 → Lux: 588.75 lx | Dist: 113 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (39153) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (40393) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 113  ON  Range 109  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  "[0m
+[0;32mI (40403) SENSORES_MESA4: MQTT → [mesa4/lux] = 588.75[0m
+[0;32mI (40403) SENSORES_MESA4: MQTT → [mesa4/distancia] = 106.00[0m
+[0;32mI (40413) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (40413) SENSORES_MESA4: Mesa4 → Lux: 588.75 lx | Dist: 106 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (40423) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (41553) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  "[0m
+[0;32mI (41563) SENSORES_MESA4: MQTT → [mesa4/lux] = 585.20[0m
+[0;32mI (41563) SENSORES_MESA4: MQTT → [mesa4/distancia] = 106.00[0m
+[0;32mI (41573) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (41573) SENSORES_MESA4: Mesa4 → Lux: 585.20 lx | Dist: 106 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (41583) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (42823) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  "[0m
+[0;32mI (42833) SENSORES_MESA4: MQTT → [mesa4/lux] = 583.43[0m
+[0;32mI (42833) SENSORES_MESA4: MQTT → [mesa4/distancia] = 106.00[0m
+[0;32mI (42843) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (42853) SENSORES_MESA4: Mesa4 → Lux: 583.43 lx | Dist: 106 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (42853) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (43983) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  "[0m
+[0;32mI (43993) SENSORES_MESA4: MQTT → [mesa4/lux] = 583.43[0m
+[0;32mI (43993) SENSORES_MESA4: MQTT → [mesa4/distancia] = 106.00[0m
+[0;32mI (44003) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (44003) SENSORES_MESA4: Mesa4 → Lux: 583.43 lx | Dist: 106 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (44013) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (45143) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  "[0m
+[0;32mI (45153) SENSORES_MESA4: MQTT → [mesa4/lux] = 581.65[0m
+[0;32mI (45153) SENSORES_MESA4: MQTT → [mesa4/distancia] = 106.00[0m
+[0;32mI (45163) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 0[0m
+[0;32mI (45163) SENSORES_MESA4: Mesa4 → Lux: 581.65 lx | Dist: 106 cm | Energia: 0 | Ocupada: 0[0m
+[0;32mI (45173) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (46413) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 106  ON  Range 195  ON  Range 195  ON  Range 195  ON  Range 195  ON  Range 195  "[0m
+[0;32mI (46423) SENSORES_MESA4: MQTT → [mesa4/lux] = 585.20[0m
+[0;32mI (46423) SENSORES_MESA4: MQTT → [mesa4/distancia] = 195.00[0m
+[0;32mI (46433) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 0[0m
+[0;32mI (46433) SENSORES_MESA4: Mesa4 → Lux: 585.20 lx | Dist: 195 cm | Energia: 0 | Ocupada: 0[0m
+[0;32mI (46443) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (47573) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 195  ON  Range 159  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 129  ON  Range 141  ON  Range 141  "[0m
+[0;32mI (47583) SENSORES_MESA4: MQTT → [mesa4/lux] = 586.97[0m
+[0;32mI (47583) SENSORES_MESA4: MQTT → [mesa4/distancia] = 141.00[0m
+[0;32mI (47593) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 0[0m
+[0;32mI (47593) SENSORES_MESA4: Mesa4 → Lux: 586.97 lx | Dist: 141 cm | Energia: 0 | Ocupada: 0[0m
+[0;32mI (47603) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (48843) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 141  ON  Range 141  ON  Range 141  ON  Range 141  ON  Range 141  ON  Range 141  ON  Range 141  ON  Range 141  ON  Range 141  ON  Range 141  ON  Range 141  ON  Range 141  "[0m
+[0;32mI (48853) SENSORES_MESA4: MQTT → [mesa4/lux] = 585.20[0m
+[0;32mI (48853) SENSORES_MESA4: MQTT → [mesa4/distancia] = 141.00[0m
+[0;32mI (48863) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 0[0m
+[0;32mI (48863) SENSORES_MESA4: Mesa4 → Lux: 585.20 lx | Dist: 141 cm | Energia: 0 | Ocupada: 0[0m
+[0;32mI (48873) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (50003) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 135  ON  Range 135  ON  Range 135  ON  Range 135  ON  Range 135  ON  Range 135  ON  Range 131  ON  Range 131  ON  Range 131  ON  Range 138  ON  Range 126  "[0m
+[0;32mI (50013) SENSORES_MESA4: MQTT → [mesa4/lux] = 581.65[0m
+[0;32mI (50013) SENSORES_MESA4: MQTT → [mesa4/distancia] = 126.00[0m
+[0;32mI (50023) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (50023) SENSORES_MESA4: Mesa4 → Lux: 581.65 lx | Dist: 126 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (50033) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (51163) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 126  ON  Range 126  ON  Range 126  ON  Range 126  ON  Range 126  ON  Range 126  ON  Range 126  ON  Range 126  ON  Range 126  ON  Range 126  ON  Range 126  "[0m
+[0;32mI (51173) SENSORES_MESA4: MQTT → [mesa4/lux] = 581.65[0m
+[0;32mI (51173) SENSORES_MESA4: MQTT → [mesa4/distancia] = 126.00[0m
+[0;32mI (51183) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (51183) SENSORES_MESA4: Mesa4 → Lux: 581.65 lx | Dist: 126 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (51193) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (52433) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 126  ON  Range 139  ON  Range 158  ON  Range 158  ON  Range 158  ON  Range 158  ON  Range 150  ON  Range 150  ON  Range 173  ON  Range 169  ON  Range 192  ON  Range 192  "[0m
+[0;32mI (52443) SENSORES_MESA4: MQTT → [mesa4/lux] = 583.43[0m
+[0;32mI (52443) SENSORES_MESA4: MQTT → [mesa4/distancia] = 192.00[0m
+[0;32mI (52453) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (52453) SENSORES_MESA4: Mesa4 → Lux: 583.43 lx | Dist: 192 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (52463) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (53593) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 182  ON  Range 182  ON  Range 182  ON  Range 182  ON  Range 182  ON  Range 182  ON  Range 182  ON  Range 182  ON  Range 170  ON  Range 170  ON  Range 170  "[0m
+[0;32mI (53603) SENSORES_MESA4: MQTT → [mesa4/lux] = 579.88[0m
+[0;32mI (53603) SENSORES_MESA4: MQTT → [mesa4/distancia] = 170.00[0m
+[0;32mI (53613) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (53613) SENSORES_MESA4: Mesa4 → Lux: 579.88 lx | Dist: 170 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (53623) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (54863) SENSORES_MESA4: LD2420 UART1 — 180 bytes: "ON  Range 158  ON  Range 158  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  "[0m
+[0;32mI (54873) SENSORES_MESA4: MQTT → [mesa4/lux] = 581.65[0m
+[0;32mI (54873) SENSORES_MESA4: MQTT → [mesa4/distancia] = 136.00[0m
+[0;32mI (54883) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (54883) SENSORES_MESA4: Mesa4 → Lux: 581.65 lx | Dist: 136 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (54893) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (56023) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  "[0m
+[0;32mI (56033) SENSORES_MESA4: MQTT → [mesa4/lux] = 576.33[0m
+[0;32mI (56033) SENSORES_MESA4: MQTT → [mesa4/distancia] = 136.00[0m
+[0;32mI (56043) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (56043) SENSORES_MESA4: Mesa4 → Lux: 576.33 lx | Dist: 136 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (56053) SENSORES_MESA4: ------------------------------------------------------[0m
+[0;32mI (57183) SENSORES_MESA4: LD2420 UART1 — 165 bytes: "ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 136  ON  Range 150  ON  Range 150  ON  Range 150  ON  Range 157  "[0m
+[0;32mI (57193) SENSORES_MESA4: MQTT → [mesa4/lux] = 578.11[0m
+[0;32mI (57193) SENSORES_MESA4: MQTT → [mesa4/distancia] = 157.00[0m
+[0;32mI (57203) SENSORES_MESA4: MQTT → [mesa4/ocupado] = 1[0m
+[0;32mI (57203) SENSORES_MESA4: Mesa4 → Lux: 578.11 lx | Dist: 157 cm | Energia: 0 | Ocupada: 1[0m
+[0;32mI (57213) SENSORES_MESA4: ------------------------------------------------------[0m
